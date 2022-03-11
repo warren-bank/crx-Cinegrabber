@@ -1,0 +1,158 @@
+--------------------------------------------------------------------------------
+
+https://ask4movie.io/
+
+--------------------------------------------------------------------------------
+// https://ask4movie.io/blacklight-2022/
+
+<iframe width="899" height="513" src="https://cinegrabber.com/v/qy04eae514-z75w" frameborder="0" allowfullscreen></iframe>
+
+--------------------------------------------------------------------------------
+// https://cinegrabber.com/v/qy04eae514-z75w
+
+<script>
+var USER_ID = '224879';
+
+--------------------------------------------------------------------------------
+// https://cinegrabber.com/v/qy04eae514-z75w
+
+request:
+========
+curl --insecure -H "X-Requested-With: XMLHttpRequest" -H "Referer: https://cinegrabber.com/v/qy04eae514-z75w" "https://cinegrabber.com/api/source/qy04eae514-z75w" -X POST --data "d=cinegrabber.com&r="
+
+response:
+=========
+{
+  "success": true,
+  "player": {
+    "poster_file": "\/userdata\/224879\/poster\/q\/y0\/qy04eae514-z75w.png?v=1646364894",
+    "logo_file": "\/userdata\/224879\/player\/3470_logo.png?v=1603840640",
+    "logo_position": "top-right",
+    "logo_link": "",
+    "logo_margin": 20,
+    "aspectratio": "16:9",
+    "powered_text": "Ask4Movie",
+    "powered_url": "https:\/\/ask4movie.io\/",
+    "css_background": "rgba(0, 0, 0, 0)",
+    "css_text": "#ffffff",
+    "css_menu": "#af1a14",
+    "css_mntext": "#ffffff",
+    "css_caption": "#000000",
+    "css_cttext": "#dbdbdb",
+    "css_ctsize": "17",
+    "css_ctopacity": "1",
+    "css_icon": "rgb(255, 255, 255)",
+    "css_ichover": "#ffffff",
+    "css_tsprogress": "#d9251d",
+    "css_tsrail": "rgba(255, 255, 255, 0.3)",
+    "css_button": "#565656",
+    "css_bttext": "#ffffff",
+    "opt_autostart": false,
+    "opt_title": false,
+    "opt_quality": true,
+    "opt_caption": true,
+    "opt_download": false,
+    "opt_sharing": false,
+    "opt_playrate": true,
+    "opt_mute": false,
+    "opt_loop": true,
+    "opt_vr": true,
+    "opt_cast": {
+      "appid": "00000000"
+    },
+    "opt_nodefault": true,
+    "opt_forceposter": false,
+    "opt_parameter": false,
+    "restrict_domain": "ask4movie.io",
+    "restrict_action": "DoNothing",
+    "restrict_target": "",
+    "adb_enable": false,
+    "adb_offset": "1",
+    "adb_text": "AdBlock Detected! Ads help us pay the bills and keep providing this service for free.  Please disable the AdBlocker to continue watching this movie.",
+    "ads_adult": false,
+    "ads_pop": true,
+    "ads_vast": true,
+    "ads_free": 0,
+    "trackingId": "",
+    "viewId": "",
+    "income": false,
+    "incomePop": false,
+    "resume_text": "Welcome back mate! You left off at xx:xx:xx. Would you like to resume watching?",
+    "resume_yes": "Yes, Please",
+    "resume_no": "No, Thanks",
+    "resume_enable": true,
+    "css_ctedge": "uniform",
+    "logger": "https:\/\/v3.fstats.xyz",
+    "revenue": "\/asset\/jquery\/slim-3.2.min.js?c=US&t=468",
+    "revenue_fallback": "\/asset\/angular.min.js?t=3",
+    "revenue_track": "https:\/\/mc.yandex.ru\/watch\/56313682"
+  },
+  "data": [{
+    "file": "https:\/\/fvs.io\/redirector?token=QXJneXhGd3ByS1FCVk9wa09yV3paeXNWU21JTXc1dmtocTN0QUYvZmRxQmRuN3gxeVVjdjZuN0MyTmU2MHpYamwvWFRSbDEwM3VrMDd5SEZmcHZGSU01dVRUQUVMZFlrWDBIemVHbHFIbzBwNkhFL1JmZ0w3a1lVdVdQRFNZazNSd2V0TUZ6UDJORnJ4MlpJN1pOY0QwSTFjcmtzZUQ3ckNRPT06MGEwREk2SEpjZTVIa2h0Mkhaek4zQT097H5f",
+    "label": "480p",
+    "type": "mp4"
+  }, {
+    "file": "https:\/\/fvs.io\/redirector?token=aFVOWk1xNklqWHpYTUNXMmlBdnFLdWlodGd5OTVMK29pZEQvMllBQlU0T3ovZzFPZWdmbktDekNWc1NSN0pleEJKOVlhS21oZk1EdWp1N2JtVVJMcm12Y1ZRS2dWL1Ztd25BREpIaFIxdWM4dDdva2NPb3gvUGl4YWJ0M3BVTjlDaG4zQlZWcFgxMmVoeE5QZ2dBZzJyVSt3c08xR0hIV0pRPT06czB2TWN5Slp4NG1iQ2hjeWNDeG1jdz09zxRZ",
+    "label": "720p",
+    "type": "mp4"
+  }, {
+    "file": "https:\/\/fvs.io\/redirector?token=SjdpeXNBay9KUkdrc2pjZ2xKaHdsS29Dc1dBN2g5YncwMXBidVlKaktCNzVlQnN2MUhrdkloaW5ML2Z5ays4RkZmRG9ocUVBYnBXanhlMllUYkc4dC9XQnRHVXE0T1BsRE5OOEY4cmttemN3RVhITldadU9iL21zZUpHdXh0VXRNS29NUzk0Rjg1NnVMME9ZOWZyWFNqMGhIUGhyMFFISEVhND06WFpEcHNMbG91eXR2cUNxTndjdTJUdz09DJlZ",
+    "label": "1080p",
+    "type": "mp4"
+  }],
+  "captions": [{
+    "id": "829196",
+    "hash": "qy04eae514-z75w",
+    "language": "English",
+    "extension": "srt",
+    "created_at": "2022-03-04 12:34:46"
+  }, {
+    "id": "829197",
+    "hash": "qy04eae514-z75w",
+    "language": "Portuguese",
+    "extension": "srt",
+    "created_at": "2022-03-04 12:34:46"
+  }, {
+    "id": "829198",
+    "hash": "qy04eae514-z75w",
+    "language": "Spanish",
+    "extension": "srt",
+    "created_at": "2022-03-04 12:34:46"
+  }, {
+    "id": "829199",
+    "hash": "qy04eae514-z75w",
+    "language": "Croatian",
+    "extension": "srt",
+    "created_at": "2022-03-04 12:34:46"
+  }, {
+    "id": "829200",
+    "hash": "qy04eae514-z75w",
+    "language": "Serbian",
+    "extension": "srt",
+    "created_at": "2022-03-04 12:34:46"
+  }],
+  "is_vr": false
+}
+
+--------------------------------------------------------------------------------
+// https://cinegrabber.com/v/qy04eae514-z75w
+
+network requests:
+=================
+
+https://fvs.io/redirector?token=QXJneXhGd3ByS1FCVk9wa09yV3paeXNWU21JTXc1dmtocTN0QUYvZmRxQmRuN3gxeVVjdjZuN0MyTmU2MHpYamwvWFRSbDEwM3VrMDd5SEZmcHZGSU01dVRUQUVMZFlrWDBIemVHbHFIbzBwNkhFL1JmZ0w3a1lVdVdQRFNZazNSd2V0TUZ6UDJORnJ4MlpJN1pOY0QwSTFjcmtzZUQ3ckNRPT06MGEwREk2SEpjZTVIa2h0Mkhaek4zQT097H5f
+https://fvs.io/redirector?token=aFVOWk1xNklqWHpYTUNXMmlBdnFLdWlodGd5OTVMK29pZEQvMllBQlU0T3ovZzFPZWdmbktDekNWc1NSN0pleEJKOVlhS21oZk1EdWp1N2JtVVJMcm12Y1ZRS2dWL1Ztd25BREpIaFIxdWM4dDdva2NPb3gvUGl4YWJ0M3BVTjlDaG4zQlZWcFgxMmVoeE5QZ2dBZzJyVSt3c08xR0hIV0pRPT06czB2TWN5Slp4NG1iQ2hjeWNDeG1jdz09zxRZ
+https://fvs.io/redirector?token=SjdpeXNBay9KUkdrc2pjZ2xKaHdsS29Dc1dBN2g5YncwMXBidVlKaktCNzVlQnN2MUhrdkloaW5ML2Z5ays4RkZmRG9ocUVBYnBXanhlMllUYkc4dC9XQnRHVXE0T1BsRE5OOEY4cmttemN3RVhITldadU9iL21zZUpHdXh0VXRNS29NUzk0Rjg1NnVMME9ZOWZyWFNqMGhIUGhyMFFISEVhND06WFpEcHNMbG91eXR2cUNxTndjdTJUdz09DJlZ
+
+https://cinegrabber.com/asset/userdata/224879/caption/qy04eae514-z75w/829196.srt
+https://cinegrabber.com/asset/userdata/224879/caption/qy04eae514-z75w/829197.srt
+https://cinegrabber.com/asset/userdata/224879/caption/qy04eae514-z75w/829198.srt
+https://cinegrabber.com/asset/userdata/224879/caption/qy04eae514-z75w/829199.srt
+https://cinegrabber.com/asset/userdata/224879/caption/qy04eae514-z75w/829200.srt
+
+notes:
+======
+* all network requests returns a 302 status code with a 'Location' header to redirect to another URL
+  - videos redirect to static mp4 resources
+
+--------------------------------------------------------------------------------
