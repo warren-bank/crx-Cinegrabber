@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Cinegrabber
 // @description  Watch videos in external player.
-// @version      1.0.0
+// @version      1.0.1
 // @match        *://cinegrabber.com/v/*
 // @match        *://*.cinegrabber.com/v/*
 // @icon         https://cinegrabber.com/asset/default/img/favicon.ico
@@ -579,12 +579,35 @@ var init = function() {
   var video_id_regex = new RegExp('^/v/([^/\\?]+).*$')
   var user_id, video_id
 
-  if (!unsafeWindow.USER_ID || !video_id_regex.test(path)) return
-
-  user_id  = unsafeWindow.USER_ID
+  user_id = get_user_id()
+  if (!user_id || !video_id_regex.test(path)) return
   video_id = path.replace(video_id_regex, '$1')
 
   process_video(user_id, video_id)
+}
+
+var get_user_id = function() {
+  if (unsafeWindow.USER_ID)
+    return unsafeWindow.USER_ID
+
+  var regex = {
+    whitespace: /[\r\n\t]+/g,
+    user_id:    /^.*var USER_ID\s*=\s*['"]([^'"]+)['"].*$/
+  }
+  var scripts, script, match
+
+  scripts = unsafeWindow.document.querySelectorAll('script:not([src])')
+  for (var i=0; i < scripts.length; i++) {
+    script = scripts[i]
+    script = script.innerText.trim()
+    script = script.replace(regex.whitespace, ' ')
+    match  = regex.user_id.exec(script)
+
+    if (match)
+      return match[1]
+  }
+
+  return null
 }
 
 var should_init = function() {
