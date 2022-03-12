@@ -1,0 +1,42 @@
+--------------------------------------------------------------------------------
+
+https://ask4movie.io/
+
+--------------------------------------------------------------------------------
+// https://ask4movie.io/the-marvelous-mrs-maisel-season-1/
+
+<iframe src="https://cinegrabber.com/p/ny68wa202y7m4-8" allowfullscreen></iframe>
+
+--------------------------------------------------------------------------------
+// https://cinegrabber.com/p/ny68wa202y7m4-8
+
+<iframe id="player" src="/v/pyd30am446r06xn"></iframe>
+
+<div class="panel toggleable open">
+    <span class="episode is-active" data-url="/v/pyd30am446r06xn">
+        The Marvelous Mrs. Maisel S01┋E01        <span class="duration">00:56:52</span>
+    </span>
+    <span class="episode" data-url="/v/ryr6eaeppn0enyj">
+        The Marvelous Mrs. Maisel S01┋E02        <span class="duration">00:51:32</span>
+    </span>
+    <span class="episode" data-url="/v/w36p2in77y42e88">
+        The Marvelous Mrs. Maisel S01┋E03        <span class="duration">00:49:05</span>
+    </span>
+    <span class="episode" data-url="/v/ln2ywunzz8-1yz0">
+        The Marvelous Mrs. Maisel S01┋E04        <span class="duration">00:55:04</span>
+    </span>
+    <span class="episode" data-url="/v/qy04eaeww7qjzkq">
+        The Marvelous Mrs. Maisel S01┋E05        <span class="duration">00:47:29</span>
+    </span>
+    <span class="episode" data-url="/v/5d14eadnnlpegde">
+        The Marvelous Mrs. Maisel S01┋E06        <span class="duration">00:46:44</span>
+    </span>
+    <span class="episode" data-url="/v/y2dk-ie778xg5k0">
+        The Marvelous Mrs. Maisel S01┋E07        <span class="duration">00:51:08</span>
+    </span>
+    <span class="episode" data-url="/v/z70zwuj22qyk6dr">
+        The Marvelous Mrs. Maisel S01┋E08        <span class="duration">01:01:35</span>
+    </span>
+</div>
+
+--------------------------------------------------------------------------------

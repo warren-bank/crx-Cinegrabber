@@ -1,9 +1,8 @@
 // ==UserScript==
 // @name         Cinegrabber
 // @description  Watch videos in external player.
-// @version      1.0.1
-// @match        *://cinegrabber.com/v/*
-// @match        *://*.cinegrabber.com/v/*
+// @version      1.0.2
+// @include      /^https?:\/\/(?:[^\.\/]*\.)*cinegrabber\.com\/[pv]\/.*$/
 // @icon         https://cinegrabber.com/asset/default/img/favicon.ico
 // @run-at       document-end
 // @grant        unsafeWindow
@@ -575,6 +574,77 @@ var resolve_url = function(url) {
 // ----------------------------------------------------------------------------- bootstrap
 
 var init = function() {
+  var is_playlist = unsafeWindow.location.pathname.substring(0, 3) === '/p/'
+  var is_video    = unsafeWindow.location.pathname.substring(0, 3) === '/v/'
+
+  if (should_init(is_playlist, is_video)) {
+    if (is_playlist)
+      init_playlist()
+
+    if (is_video)
+      init_video()
+  }
+}
+
+var should_init = function(is_playlist, is_video) {
+  if ((typeof GM_getUrl === 'function') && (GM_getUrl() !== unsafeWindow.location.href)) return false
+
+  if (is_video && (unsafeWindow.window !== unsafeWindow.top)) {
+    try {
+      if (
+        (unsafeWindow.top.location.hostname.toLowerCase().indexOf('cinegrabber.com') >= 0) &&
+        (unsafeWindow.top.location.pathname.substring(0, 3) === '/p/')
+      ) return false
+    }
+    catch(e) {}
+  }
+
+  return true
+}
+
+// -------------------------------------
+
+var init_playlist = function() {
+  var episodes, html, ep, url, text, matches, title, duration
+
+  var regex = {
+    whitespace: /[\r\n\t]+/g,
+    text:       /^(.*?)\s*(\d+:\d+:\d+)$/
+  }
+
+  episodes = unsafeWindow.document.querySelectorAll('.episode[data-url]')
+  html     = ['<ul>']
+
+  for (var i=0; i < episodes.length; i++) {
+    ep      = episodes[i]
+    url     = ep.getAttribute('data-url')
+    text    = ep.innerText.trim().replace(regex.whitespace, ' ')
+    matches = regex.text.exec(text)
+
+    if (matches) {
+      title    = matches[1]
+      duration = matches[2]
+    }
+    else {
+      title    = text
+      duration = ''
+    }
+
+    html.push('  <li>' + '<a target="_blank" href="' + url + '">' + title + '</a>' + (duration ? (' <small>(' + duration + ')</small>') : '') + '</li>')
+  }
+
+  html.push('</ul>')
+
+  unsafeWindow.document.close()
+  unsafeWindow.document.write('')
+  unsafeWindow.document.close()
+
+  unsafeWindow.document.body.innerHTML = html.join("\n")
+}
+
+// -------------------------------------
+
+var init_video = function() {
   var path           = unsafeWindow.location.pathname
   var video_id_regex = new RegExp('^/v/([^/\\?]+).*$')
   var user_id, video_id
@@ -610,11 +680,6 @@ var get_user_id = function() {
   return null
 }
 
-var should_init = function() {
-  if ((typeof GM_getUrl === 'function') && (GM_getUrl() !== unsafeWindow.location.href)) return false
+// -------------------------------------
 
-  return true
-}
-
-if (should_init())
-  init()
+init()
